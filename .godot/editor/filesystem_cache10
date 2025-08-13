@@ -1,0 +1,16 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1755089896
+icon.svg::CompressedTexture2D/CompressedTexture2D::3873396407813196067::1755089344::1755089492::1::::<><><>0<>0<>7f28a59104db2970c2693060eb01b4bb<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://assets/::1755089562
+::res://globals/::1755089609
+GameManager.gd::GDScript/GDScript::7599573468523387451::1755089344::0::1::::<>Node<><>0<>0<><>::
+SceneManager.gd::GDScript/GDScript::6315927914997171000::1755089344::0::1::::<>Node<><>0<>0<><>::
+SignalHub.gd::GDScript/GDScript::3209229258011037812::1755089344::0::1::::<>Node<><>0<>0<><>::
+SoundManager.gd::GDScript/GDScript::807161669233941710::1755089344::0::1::::<>Node<><>0<>0<><>::
+sound_manager.tscn::PackedScene::5995271242339077890::1755089609::0::1::::<><><>0<>0<><>::uid://lq83m8t3ojcw::::res://globals/SoundManager.gd
+::res://platformer-collab/::1755089834
+::res://scenes/::1755089598
+::res://scenes/enemies/::1755089588
+::res://scenes/hazards/::1755089598
+::res://scenes/levels/::1755089572
+::res://scripts/::1755089556
