@@ -15,24 +15,9 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	update_Debug_Label()
-	# If not on floor, apply gravity, and
-	# start Coyote Timer
-	# If on floor, reset _jump_available and
-	# stop Coyote Timer
-	if not is_on_floor():
-		velocity += get_gravity() * delta
-		if coyote_timer.is_stopped():
-			coyote_timer.start(_coyote_time)
-	else:  # if IS on floor
-		_jump_available = true
-		coyote_timer.stop()
 
-
-
-	# Handle jump + Coyote Time
-	if Input.is_action_just_pressed("jump") and _jump_available:
-		velocity.y = JUMP_VELOCITY
-		_jump_available = false
+	handle_buffer_jump(delta) ## Working on this one now
+	handle_coyote_jump(delta)
 
 
 
@@ -52,9 +37,32 @@ func _physics_process(delta: float) -> void:
 
 # End of Physics Process 
 
+
+
+
 func flip_me(flip: bool) -> void: 
 	player_sprite.flip_h = flip
 
+func handle_buffer_jump(delta) -> void:
+	pass
+
+	# If not on floor, apply gravity, and
+	# start Coyote Timer
+	# If on floor, reset _jump_available and
+	# stop Coyote Timer
+func handle_coyote_jump(delta) -> void:
+	if not is_on_floor():
+		velocity += get_gravity() * delta
+		if coyote_timer.is_stopped():
+			coyote_timer.start(_coyote_time)
+	else:  # if IS on floor
+		_jump_available = true
+		coyote_timer.stop()
+		
+	if Input.is_action_just_pressed("jump") and _jump_available:
+		velocity.y = JUMP_VELOCITY
+		_jump_available = false
+		
 
 func _on_coyote_timer_timeout() -> void:
 	_jump_available = false
