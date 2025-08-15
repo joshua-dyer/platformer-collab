@@ -1,3 +1,6 @@
+res://scripts
+res://scenes/player
+res://assets/player
 res://scenes/hazards
 res://scenes/levels
 res://scenes/enemies

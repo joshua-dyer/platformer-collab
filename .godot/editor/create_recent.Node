@@ -1,2 +1,9 @@
+Timer
+Label
+Camera2D
 Node2D
+TileMapLayer
+CollisionShape2D
+Area2D
+AnimatedSprite2D
 CharacterBody2D
